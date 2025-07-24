@@ -12,3 +12,7 @@ texture = ExtResource("1_014kd")
 stretch_mode = 1
 
 [node name="player" parent="." instance=ExtResource("2_bswci")]
+
+[node name="player2" parent="." instance=ExtResource("2_bswci")]
+position = Vector2(628, 98)
+gravity_scale = 1.0
