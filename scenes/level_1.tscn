@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://d1wsdbsv475i0"]
+[gd_scene load_steps=3 format=3 uid="uid://d1wsdbsv475i0"]
 
 [ext_resource type="Texture2D" uid="uid://bdqx6nyfgktcj" path="res://tex/backgrounds/darkPurple.png" id="1_014kd"]
+[ext_resource type="PackedScene" uid="uid://cadojfdxhm55g" path="res://scenes/player.tscn" id="2_bswci"]
 
 [node name="Level1" type="Node2D"]
 
@@ -9,3 +10,5 @@ offset_right = 1152.0
 offset_bottom = 648.0
 texture = ExtResource("1_014kd")
 stretch_mode = 1
+
+[node name="player" parent="." instance=ExtResource("2_bswci")]
