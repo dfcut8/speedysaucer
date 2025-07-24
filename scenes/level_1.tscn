@@ -16,3 +16,5 @@ stretch_mode = 1
 [node name="player2" parent="." instance=ExtResource("2_bswci")]
 position = Vector2(628, 98)
 gravity_scale = 1.0
+
+[editable path="player"]
