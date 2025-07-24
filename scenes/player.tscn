@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cadojfdxhm55g"]
+
+[ext_resource type="Texture2D" uid="uid://dfy5i8fowu3sd" path="res://tex/playerShip1_red.png" id="1_3vyb7"]
+
+[node name="player" type="RigidBody2D"]
+position = Vector2(100, 100)
+gravity_scale = 0.5
+
+[node name="sprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_3vyb7")
