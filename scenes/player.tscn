@@ -5,7 +5,6 @@
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_3vyb7"]
 
 [node name="player" type="RigidBody2D"]
-position = Vector2(100, 100)
 gravity_scale = 0.5
 
 [node name="sprite" type="Sprite2D" parent="."]
