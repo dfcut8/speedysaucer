@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://cadojfdxhm55g"]
+[gd_scene load_steps=4 format=3 uid="uid://cadojfdxhm55g"]
 
 [ext_resource type="Texture2D" uid="uid://dfy5i8fowu3sd" path="res://tex/playerShip1_red.png" id="1_3vyb7"]
+[ext_resource type="Script" uid="uid://dhck2a2edy5ro" path="res://scenes/player.gd" id="1_g2els"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_3vyb7"]
 
 [node name="player" type="RigidBody2D"]
 gravity_scale = 0.5
+script = ExtResource("1_g2els")
 
 [node name="sprite" type="Sprite2D" parent="."]
 material = SubResource("CanvasItemMaterial_3vyb7")
