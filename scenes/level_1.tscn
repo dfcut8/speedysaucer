@@ -19,4 +19,3 @@ position = Vector2(201, 225)
 [node name="player2" parent="player" instance=ExtResource("2_bswci")]
 modulate = Color(0.486667, 1, 0.45, 1)
 position = Vector2(-40, 31)
-gravity_scale = 1.0

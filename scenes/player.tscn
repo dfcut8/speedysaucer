@@ -6,7 +6,7 @@
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_3vyb7"]
 
 [node name="player" type="RigidBody2D"]
-gravity_scale = 0.5
+gravity_scale = 0.0
 script = ExtResource("1_g2els")
 
 [node name="sprite" type="Sprite2D" parent="."]
