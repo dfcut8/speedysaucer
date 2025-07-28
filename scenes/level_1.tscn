@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://d1wsdbsv475i0"]
+[gd_scene load_steps=5 format=3 uid="uid://d1wsdbsv475i0"]
 
-[ext_resource type="Texture2D" uid="uid://bdqx6nyfgktcj" path="res://tex/backgrounds/darkPurple.png" id="1_014kd"]
 [ext_resource type="Script" uid="uid://mgmvl33kl6dn" path="res://scenes/level.gd" id="1_rus8k"]
+[ext_resource type="Texture2D" uid="uid://bw7egyj2laspd" path="res://tex/backgrounds/purple.png" id="2_5xbjy"]
 [ext_resource type="PackedScene" uid="uid://cadojfdxhm55g" path="res://scenes/player.tscn" id="2_bswci"]
+[ext_resource type="PackedScene" uid="uid://b4skpc00aw14f" path="res://scenes/maze.tscn" id="4_5xbjy"]
 
 [node name="Level1" type="Node2D"]
 script = ExtResource("1_rus8k")
@@ -10,11 +11,13 @@ script = ExtResource("1_rus8k")
 [node name="Background" type="TextureRect" parent="."]
 offset_right = 1152.0
 offset_bottom = 648.0
-texture = ExtResource("1_014kd")
+texture = ExtResource("2_5xbjy")
 stretch_mode = 1
 
+[node name="Area2D" parent="." instance=ExtResource("4_5xbjy")]
+
 [node name="player" parent="." instance=ExtResource("2_bswci")]
-position = Vector2(201, 225)
+position = Vector2(20, 58)
 
 [node name="player2" parent="player" instance=ExtResource("2_bswci")]
 modulate = Color(0.486667, 1, 0.45, 1)
