@@ -1,11 +1,12 @@
 extends RigidBody2D
 
-func _ready() -> void:
-	apply_impulse(Vector2(25, 0))
-
-func _process(delta: float) -> void:
-	pass
-
 func _physics_process(delta: float) -> void:
-	var r = randf_range(-100, 100)
-	apply_force(Vector2(r, r))
+	var force = 1000
+	if Input.is_action_pressed("move_right"):
+		apply_force(Vector2(force, 0))
+	if Input.is_action_pressed("move_left"):
+		apply_force(Vector2(-force, 0))
+	if Input.is_action_pressed("move_up"):
+		apply_force(Vector2(0, -force))
+	if Input.is_action_pressed("move_down"):
+		apply_force(Vector2(0, force))
