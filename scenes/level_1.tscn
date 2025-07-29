@@ -14,11 +14,10 @@ offset_bottom = 648.0
 texture = ExtResource("2_5xbjy")
 stretch_mode = 1
 
-[node name="Area2D" parent="." instance=ExtResource("4_5xbjy")]
+[node name="Maze" parent="." instance=ExtResource("4_5xbjy")]
 
 [node name="player" parent="." instance=ExtResource("2_bswci")]
 position = Vector2(20, 58)
 
-[node name="player2" parent="player" instance=ExtResource("2_bswci")]
-modulate = Color(0.486667, 1, 0.45, 1)
-position = Vector2(-40, 31)
+[connection signal="body_entered" from="Maze" to="." method="_on_maze_body_entered"]
+[connection signal="body_exited" from="Maze" to="." method="_on_maze_body_exited"]
