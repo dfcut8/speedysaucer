@@ -18,6 +18,3 @@ stretch_mode = 1
 
 [node name="player" parent="." instance=ExtResource("2_bswci")]
 position = Vector2(20, 58)
-
-[connection signal="body_entered" from="Maze" to="." method="_on_maze_body_entered"]
-[connection signal="body_exited" from="Maze" to="." method="_on_maze_body_exited"]

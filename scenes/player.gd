@@ -11,3 +11,10 @@ func _physics_process(delta: float) -> void:
 		apply_force(Vector2(0, -force))
 	if Input.is_action_pressed("move_down"):
 		apply_force(Vector2(0, force))
+
+func _ready() -> void:
+	var _maze: Area2D = get_node("../Maze")
+	_maze.body_entered.connect(_body_out)
+	
+func _body_out(body: Node2D) -> void:
+	print("player: body_entered #1")
